@@ -1,6 +1,5 @@
 package stu.napls.serviceImpl;
 
-import java.util.HashMap;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -28,7 +27,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public List<HashMap<String, Object>> getUserInfo() {
+	public List<User> getUserInfo() {
 		return this.userDao.getUserHashMapList();
 	}
 

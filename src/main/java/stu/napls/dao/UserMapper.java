@@ -1,6 +1,5 @@
 package stu.napls.dao;
 
-import java.util.HashMap;
 import java.util.List;
 
 import stu.napls.model.User;
@@ -20,5 +19,5 @@ public interface UserMapper {
 
     int updateByPrimaryKey(User record);
     
-    List<HashMap<String, Object>> getUserHashMapList();
+    List<User> getUserHashMapList();
 }
